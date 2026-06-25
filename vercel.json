@@ -1,0 +1,22 @@
+{
+    "cleanUrls": true,
+    "builds": [
+        {
+            "src": "**/*.php",
+            "use": "vercel-php@0.6.2"
+        },
+        {
+            "src": "**/*.{jpg,jpeg,png,gif,svg,webp}",
+            "use": "@vercel/static"
+        }
+    ],
+    "rewrites": [
+        { "source": "/attractions", "destination": "/attractions.php" },
+        { "source": "/water-park", "destination": "/water-park.php" },
+        { "source": "/stay", "destination": "/stay.php" },
+        { "source": "/events", "destination": "/events.php" },
+        { "source": "/gallery", "destination": "/gallery.php" },
+        { "source": "/visit", "destination": "/visit.php" },
+        { "source": "/contact", "destination": "/contact.php" }
+    ]
+}
